@@ -49,6 +49,8 @@ jobs:
 
             - name: Android
               uses: android-actions/setup-android@v4
+              with:
+                  packages: 'platform-tools'
 
             - name: Flutter
               uses: subosito/flutter-action@v2
@@ -63,7 +65,7 @@ jobs:
             - name: Bun
               uses: oven-sh/setup-bun@v2
               with:
-                  bun-version: latest    
+                  bun-version: latest
 
             - name: Rust
               uses: dtolnay/rust-toolchain@stable
