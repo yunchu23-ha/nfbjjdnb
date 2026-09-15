@@ -48,7 +48,7 @@ jobs:
                   cache-read-only: true
 
             - name: Android
-              uses: android-actions/setup-android@v3
+              uses: android-actions/setup-android@v4
 
             - name: Flutter
               uses: subosito/flutter-action@v2
